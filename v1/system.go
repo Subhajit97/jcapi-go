@@ -37,9 +37,15 @@ type System struct {
 
 	Fde *Fde `json:"fde,omitempty"`
 
+	FileSystem string `json:"fileSystem,omitempty"`
+
+	HasServiceAccount bool `json:"hasServiceAccount,omitempty"`
+
 	Hostname string `json:"hostname,omitempty"`
 
 	LastContact string `json:"lastContact,omitempty"`
+
+	Mdm *Mdm `json:"mdm,omitempty"`
 
 	ModifySSHDConfig bool `json:"modifySSHDConfig,omitempty"`
 
@@ -49,7 +55,13 @@ type System struct {
 
 	Os string `json:"os,omitempty"`
 
+	OsFamily string `json:"osFamily,omitempty"`
+
 	RemoteIP string `json:"remoteIP,omitempty"`
+
+	SerialNumber string `json:"serialNumber,omitempty"`
+
+	ServiceAccountState ServiceAccountState `json:"serviceAccountState,omitempty"`
 
 	SshRootEnabled bool `json:"sshRootEnabled,omitempty"`
 
@@ -59,9 +71,15 @@ type System struct {
 
 	SystemTimezone int32 `json:"systemTimezone,omitempty"`
 
+	SystemToken string `json:"systemToken,omitempty"`
+
 	Tags []string `json:"tags,omitempty"`
 
 	TemplateName string `json:"templateName,omitempty"`
+
+	UsernameHashes map[string]string `json:"usernameHashes,omitempty"`
+
+	UserMetrics []UserMetric `json:"userMetrics,omitempty"`
 
 	Version string `json:"version,omitempty"`
 }
