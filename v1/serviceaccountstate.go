@@ -9,7 +9,7 @@
 
 package v1
 
-type Mdm struct {
+type ServiceAccountState struct {
 	CreateDateTime string `json:"createDatetime,omitempty"`
 
 	CreateMethod string `json:"createMethod,omitempty"`

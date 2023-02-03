@@ -9,7 +9,7 @@
 
 package v1
 
-type Mdm struct {
+type UserMetric struct {
 	Admin bool `json:"admin,omitempty"`
 
 	CollectionTime string `json:"collectionTime,omitempty"`
